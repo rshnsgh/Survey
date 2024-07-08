@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Gas vs Electric Survey</h1>
+      <p id="description">Help us improve YOUR cars!</p>
+    </header>
+    <form id="survey-form">
+      <div class="survey">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div><br>
+      <div class="survey">
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      </div><br>
+      <div class="survey">
+        <label for="age" id="number-label">Age</label><br>
+        <input type="number" name="age" id="number" placeholder="Age" min="18" max="99">
+      </div><br>
+      <div class="survey">
+        <p>Select below if your car is GAS or ELECTRIC or HYBRID</p>
+        <select name="type" id="dropdown">
+          <option disabled selected value=>Choose your vehicle's power</option>
+          <option value="gas">Gas</option>
+          <option value="electric">Electric</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+      </div><br>
+      <div class="survey">
+        <p>How satisfied are you with your current vehicle's performance?</p>
+        <input type="radio" name="satisfaction" id="input-radio" value="sat">Very satisfied <br>
+        <input type="radio" name="satisfaction" id="input-radio" value="sat">Satisfied <br>
+        <input type="radio" name="satisfaction" id="input-radio" value="sat">Neutral <br>
+        <input type="radio" name="satisfaction" id="input-radio" value="sat">Dissatisfied <br>
+        <input type="radio" name="satisfaction" id="input-radio" value="sat">Very Dissatisfied <br>
+      </div><br>
+      <div class="survey">
+        <p>Are you considering switching to a different type of vehicle in the future? If so, which one?</p>
+        <select name="type" id="dropdown">
+          <option disabled selected value=>Choose the type</option>
+          <option value="togas">Yes, to gasoline</option>
+          <option value="toelectric">Yes, to electric</option>
+          <option value="tohybrid">Yes, to hybrid</option>
+          <option value="stay">No, I plan to stick with the same type</option>
+          <option value="unsure">I'm not sure</option>
+        </select>
+      </div><br>
+      <div class="survey">
+        <p>What is the most important factor for you when choosing a vehicle?</p>
+        <input type="checkbox" name="fuel" id="input-checkbox" value="preference">Fuel efficiency <br>
+        <input type="checkbox" name="green" id="input-checkbox" value="preference">Environmental impact <br>
+        <input type="checkbox" name="cost" id="input-checkbox" value="preference">Initial cost <br>
+        <input type="checkbox" name="maintenance" id="input-checkbox" value="preference">Maintenance cost <br>
+        <input type="checkbox" name="power" id="input-checkbox" value="preference">Performace and power <br>
+      </div><br>
+      <div class="survey">
+        <p>Any comments to add?</p>
+        <textarea name="textarea" id="textarea" placeholder="Write your comments or suggestions here!"></textarea>
+      </div><br>
+      <div class="survey">
+        <div class="subtn">
+          <button  type="submit" id="submit" placeholder="Write your comments or suggestions here!">Submit</button>
+        </div>
+        
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
