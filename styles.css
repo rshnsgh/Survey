@@ -50,3 +50,9 @@ header {
   width: 50%;
   height: 60px;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
